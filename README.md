@@ -41,7 +41,7 @@ resizable inspector provides access to architectural visualizations.
 
 ### Main Chess Interface
 
-![GlassBox Chess Interface](docs/images/chess-interface.png)
+![GlassBox Chess Interface](images/chess-interface.png)
 
 ### Architecture & UML Visualizations
 
@@ -72,27 +72,27 @@ and runtime behaviour.
 
 #### Structure View
 
-![Structure Visualization](docs/images/structure.png)
+![Structure Visualization](images/structure.png)
 
 #### Class Diagram
 
-![Class Diagram](docs/images/class-diagram.png)
+![Class Diagram](images/class-diagram.png)
 
 #### Sequence Diagram
 
-![Sequence Diagram](docs/images/sequence.png)
+![Sequence Diagram](images/sequence.png)
 
 #### Collaboration Diagram
 
-![Collaboration Diagram](docs/images/collaboration.png)
+![Collaboration Diagram](images/collaboration.png)
 
 #### Component Diagram
 
-![Component Diagram](docs/images/component.png)
+![Component Diagram](images/component.png)
 
 #### Game Inspector
 
-![Game Inspector](docs/images/game.png)
+![Game Inspector](images/game.png)
 
 ------------------------------------------------------------------------
 
@@ -383,3 +383,4 @@ alive.`</em>`{=html}
 ```{=html}
 </p>
 ```
+
