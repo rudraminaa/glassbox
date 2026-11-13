@@ -372,7 +372,7 @@ repository for the current implementation._
 GitHub: [@rudraminaa](https://github.com/rudraminaa)
 
 Project: [GlassBox
-Engine](https://github.com/rudraminaa/glassbox)
+Engine](https://rudraminaa.github.io/glassbox/)
 
 ---
 
