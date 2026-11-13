@@ -1,0 +1,1 @@
+package com.glassbox.uml.trace; import com.glassbox.uml.event.EventBus; import com.glassbox.uml.event.GlassBoxEvent; public final class DebugConsoleSubscriber{private DebugConsoleSubscriber(){}public static void attach(){EventBus.getInstance().subscribe(GlassBoxEvent.class,e->System.out.println("[GLASSBOX] "+e.getClass().getSimpleName()+" @ "+e.getTimestamp()));}}

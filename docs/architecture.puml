@@ -1,0 +1,68 @@
+@startuml
+skinparam classAttributeIconSize 0
+package "engine" {
+  interface Game<M>
+  interface GamePlugin<B,M,S>
+  interface Command
+  class CommandHistory
+  interface GamePhase<M>
+}
+package "chess.domain" {
+  class Board
+  class Square
+  abstract class Piece
+  class Move
+  class CastleMove
+  class EnPassantMove
+  class PromotionMove
+  class Position
+  enum Color
+  enum PieceType
+  enum GameStatus
+  class GameState
+}
+package "chess.piece" {
+  class King
+  class Queen
+  class Rook
+  class Bishop
+  class Knight
+  class Pawn
+  class PieceFactory
+}
+package "chess.rule" {
+  class CheckDetector
+  class MoveValidator
+  class GameStateEvaluator
+  class Perft
+}
+package "chess.game" { class ChessGame }
+package "chess.ai" { interface AIStrategy; class RandomAI; class GreedyAI; class MinimaxAI }
+package "ui" { class MainApp; class ChessController; class ChessBoardView; class RightPanelView }
+package "uml" { class EventBus; interface GlassBoxEvent; class ClassModelBuilder; class TracingProxy }
+Board *-- Square : composition
+Square o-- Piece : aggregation
+Piece <|-- King
+Piece <|-- Queen
+Piece <|-- Rook
+Piece <|-- Bishop
+Piece <|-- Knight
+Piece <|-- Pawn
+Move <|-- CastleMove
+Move <|-- EnPassantMove
+Move <|-- PromotionMove
+Piece --> Position
+Board --> GameState
+ChessGame ..> Board
+ChessGame ..> CommandHistory
+ChessGame ..> GamePhase
+MoveValidator ..> CheckDetector
+MoveValidator ..> Board
+AIStrategy <|.. RandomAI
+AIStrategy <|.. GreedyAI
+AIStrategy <|.. MinimaxAI
+MainApp --> ChessController
+ChessController --> ChessBoardView
+ChessController --> RightPanelView
+ChessGame ..> EventBus
+@enduml

@@ -1,0 +1,130 @@
+/* GlassBox — ChatGPT-inspired neutral dark workspace */
+.app-root {
+    -fx-background-color: #212121;
+    -fx-font-family: "Segoe UI", "Inter", sans-serif;
+}
+.toolbar {
+    -fx-background-color: #212121;
+    -fx-border-color: transparent transparent #343434 transparent;
+    -fx-border-width: 0 0 1 0;
+    -fx-alignment: center-left;
+}
+.brand { -fx-text-fill: #f1f1f1; -fx-font-size: 14px; -fx-font-weight: 800; -fx-letter-spacing: 1.2px; }
+.brand-sub { -fx-text-fill: #a1a1a1; -fx-font-size: 12px; }
+.tool-button, .subtle-button {
+    -fx-background-color: #303030;
+    -fx-text-fill: #eeeeee;
+    -fx-background-radius: 8px;
+    -fx-padding: 8 13;
+    -fx-border-color: #414141;
+    -fx-border-radius: 8px;
+    -fx-cursor: hand;
+}
+.tool-button:hover, .subtle-button:hover { -fx-background-color: #414141; }
+.tool-button:selected { -fx-background-color: #3a3a3a; -fx-border-color: #666666; }
+.difficulty-picker {
+    -fx-background-color: #303030;
+    -fx-background-radius: 8px;
+    -fx-border-color: #414141;
+    -fx-border-radius: 8px;
+}
+.difficulty-picker .label { -fx-text-fill: #eeeeee; }
+.difficulty-picker .list-cell { -fx-background-color: #303030; -fx-text-fill: #eeeeee; }
+.shortcut-hint { -fx-text-fill: #858585; -fx-font-size: 10px; -fx-font-weight: 700; }
+.board-frame {
+    -fx-background-color: #262626;
+    -fx-background-radius: 14px;
+    -fx-border-color: #383838;
+    -fx-border-radius: 14px;
+    -fx-border-width: 1px;
+}
+.coordinate { -fx-text-fill: #a1a1a1; -fx-font-size: 10px; -fx-font-weight: 700; }
+.inspector {
+    -fx-background-color: #262626;
+    -fx-background-radius: 14px;
+    -fx-border-color: #383838;
+    -fx-border-radius: 14px;
+    -fx-border-width: 1px;
+}
+.eyebrow { -fx-text-fill: #e5e5e5; -fx-font-size: 12px; -fx-font-weight: 700; }
+.panel-subtitle { -fx-text-fill: #858585; -fx-font-size: 10px; }
+.surface { -fx-background-color: #303030; -fx-background-radius: 10px; }
+.surface .label { -fx-text-fill: #e5e5e5; }
+.state-active { -fx-text-fill: #a6c99a; -fx-font-size: 11px; -fx-font-weight: 700; }
+.state-alert { -fx-text-fill: #ef9b91; -fx-font-size: 11px; -fx-font-weight: 700; }
+.inspection-tabs .tab-header-area .tab-header-background { -fx-background-color: #262626; }
+.inspection-tabs .tab { -fx-background-color: #303030; -fx-background-radius: 7px 7px 0 0; -fx-padding: 7 9; }
+.inspection-tabs .tab:selected { -fx-background-color: #444444; }
+.inspection-tabs .tab-label { -fx-text-fill: #dddddd; -fx-font-size: 10px; }
+.inspection-tabs .tab-content-area { -fx-background-color: #202020; -fx-border-color: #383838; -fx-border-radius: 0 0 8px 8px; }
+.uml-view { -fx-background-color: #202020; }
+.uml-toolbar { -fx-background-color: #262626; -fx-alignment: center-left; }
+.uml-toolbar .label { -fx-text-fill: #aaaaaa; -fx-font-size: 10px; }
+.uml-toolbar .button { -fx-padding: 5 8; -fx-font-size: 10px; }
+.diagram-scroll { -fx-background: #202020; -fx-background-color: #202020; -fx-border-color: transparent; }
+.diagram-scroll > .viewport { -fx-background-color: #202020; }
+.diagram-status { -fx-text-fill: #858585; -fx-font-size: 10px; }
+.uml-source, .text-area { -fx-control-inner-background: #171717; -fx-text-fill: #dedede; -fx-highlight-fill: #555555; -fx-highlight-text-fill: white; }
+.uml-source .content, .text-area .content { -fx-background-color: #171717; }
+.list-view { -fx-background-color: #202020; -fx-control-inner-background: #202020; -fx-border-color: #3b3b3b; }
+.list-cell { -fx-background-color: #202020; -fx-text-fill: #dddddd; -fx-font-size: 12px; }
+.list-cell:filled:selected { -fx-background-color: #414141; }
+.status-line {
+    -fx-background-color: #262626;
+    -fx-text-fill: #a8a8a8;
+    -fx-padding: 9 18;
+    -fx-font-size: 11px;
+    -fx-border-color: #383838 transparent transparent transparent;
+}
+.split-pane { -fx-background-color: transparent; -fx-padding: 0; }
+.split-pane-divider { -fx-background-color: #212121; -fx-padding: 0 4px 0 4px; }
+.split-pane-divider:hover { -fx-background-color: #505050; }
+.separator *.line { -fx-border-color: #484848; }
+.scroll-bar:vertical, .scroll-bar:horizontal { -fx-background-color: #202020; }
+.scroll-bar .thumb { -fx-background-color: #555555; -fx-background-radius: 8px; }
+
+/* Refined inspector and UML workspace */
+.inspector { -fx-background-color: #20252b; -fx-background-radius: 12px; -fx-border-color: #343b43; -fx-border-radius: 12px; }
+.inspection-tabs .tab-header-area { -fx-padding: 4 0 8 0; }
+.inspection-tabs .tab { -fx-background-color: #292f36; -fx-background-radius: 7px; -fx-padding: 8 10; }
+.inspection-tabs .tab:selected { -fx-background-color: #39434d; -fx-border-color: #6d9d82; -fx-border-radius: 7px; }
+.inspection-tabs .tab-content-area { -fx-background-color: #171b24; -fx-background-radius: 0 0 9px 9px; -fx-border-color: #343d49; }
+.uml-view { -fx-background-color: #171b24; }
+.uml-toolbar { -fx-background-color: #202630; -fx-border-color: transparent transparent #303b49 transparent; }
+.diagram-scroll, .diagram-scroll > .viewport { -fx-background: #171b24; -fx-background-color: #171b24; }
+.diagram-status { -fx-text-fill: #8190a3; -fx-padding: 3 0; }
+.inspector .list-view { -fx-background-color: #171b24; -fx-control-inner-background: #171b24; -fx-border-color: #343d49; -fx-background-radius: 8px; }
+.inspector .list-cell { -fx-background-color: #171b24; -fx-text-fill: #d5dce6; -fx-padding: 7 9; }
+.inspector .list-cell:filled:selected { -fx-background-color: #34404c; }
+.workspace-split .split-pane-divider { -fx-background-color: #21272e; -fx-padding: 0 5px; }
+.workspace-split .split-pane-divider:hover { -fx-background-color: #61796a; }
+
+
+/* Responsive UML canvas: diagrams fit the inspector width at 100% zoom.
+   Vertical overflow is scrollable; horizontal overflow is reserved for zoom. */
+.uml-view {
+    -fx-min-width: 0;
+    -fx-min-height: 0;
+}
+.uml-view .viewport {
+    -fx-background-color: #111827;
+}
+.uml-view .scroll-pane {
+    -fx-fit-to-width: false;
+    -fx-fit-to-height: false;
+    -fx-min-width: 0;
+    -fx-min-height: 0;
+}
+.uml-view .image-view {
+    -fx-smooth: true;
+}
+.uml-toolbar {
+    -fx-spacing: 7px;
+    -fx-padding: 7px 9px;
+}
+.uml-toolbar .slider {
+    -fx-pref-width: 105px;
+}
+.diagram-status {
+    -fx-padding: 4px 10px 6px 10px;
+}

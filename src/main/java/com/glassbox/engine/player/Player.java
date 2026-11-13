@@ -1,0 +1,3 @@
+package com.glassbox.engine.player; import com.glassbox.engine.core.Game;
+/** Template-method skeleton for a game participant. */
+public abstract class Player<M,G extends Game<M>>{protected final String name;protected Player(String name){this.name=name;}public final void takeTurn(G game){if(game.getCurrentPhase().isTerminal())return;beforeTurn(game);try{M m=determineMove(game);if(m!=null)game.makeMove(m);}catch(Exception e){handleError(e);}afterTurn(game);}protected abstract void beforeTurn(G game);protected abstract M determineMove(G game)throws Exception;protected abstract void handleError(Exception e);protected abstract void afterTurn(G game);public String getName(){return name;}}

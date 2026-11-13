@@ -1,0 +1,1 @@
+package com.glassbox.uml.meta; import java.lang.annotation.*; @Retention(RetentionPolicy.RUNTIME) @Target({ElementType.TYPE,ElementType.FIELD}) public @interface UmlRole{String value();String PIECE="PIECE",RULES="RULES",AI="AI",COMMAND="COMMAND",UI="UI",ENGINE="ENGINE",OBSERVER="OBSERVER";}

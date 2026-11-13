@@ -1,0 +1,1 @@
+package com.glassbox.exception; import org.junit.jupiter.api.Test; import static org.junit.jupiter.api.Assertions.*; public class ExceptionHierarchyTest{@Test void customExceptionsShareBaseType(){assertTrue(new InvalidMoveException("bad") instanceof GlassBoxException);assertEquals("bad",new InvalidMoveException("bad").getMessage());}}
