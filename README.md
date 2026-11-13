@@ -15,23 +15,23 @@ makes the architecture observable at runtime --- connecting actual
 gameplay events to the underlying object model, class relationships,
 message flows, and component interactions.
 
-------------------------------------------------------------------------
+---
 
 ## ✨ Overview
 
 GlassBox brings together three core ideas:
 
--   **Chess Engine:** A playable chess implementation with move
-    validation, game-state management, and move history.
--   **AI Opponent:** An integrated computer opponent with selectable
-    difficulty.
--   **Live UML Inspector:** A visualization environment that exposes the
-    internal architecture and runtime behaviour of the application.
+- **Chess Engine:** A playable chess implementation with move
+  validation, game-state management, and move history.
+- **AI Opponent:** An integrated computer opponent with selectable
+  difficulty.
+- **Live UML Inspector:** A visualization environment that exposes the
+  internal architecture and runtime behaviour of the application.
 
 The result is an interactive demonstration of how object-oriented design
 principles translate into a functioning software system.
 
-------------------------------------------------------------------------
+---
 
 ## 🖥️ Application Preview
 
@@ -48,27 +48,31 @@ resizable inspector provides access to architectural visualizations.
 The inspector provides separate views of the application's architecture
 and runtime behaviour.
 
-  -----------------------------------------------------------------------
-  Visualization                       Purpose
-  ----------------------------------- -----------------------------------
-  Structure                           Runtime object structure and
-                                      relationships
+---
 
-  Class Diagram                       Classes, interfaces, inheritance,
-                                      attributes and methods
+Visualization Purpose
 
-  Sequence                            Ordered interactions between system
-                                      participants
+---
 
-  Collaboration                       Communication and relationships
-                                      between interacting objects
+Structure Runtime object structure and
+relationships
 
-  Component                           High-level software components and
-                                      dependencies
+Class Diagram Classes, interfaces, inheritance,
+attributes and methods
 
-  Game                                Current game state, turn
-                                      information and move history
-  -----------------------------------------------------------------------
+Sequence Ordered interactions between system
+participants
+
+Collaboration Communication and relationships
+between interacting objects
+
+Component High-level software components and
+dependencies
+
+Game Current game state, turn
+information and move history
+
+---
 
 #### Structure View
 
@@ -94,29 +98,29 @@ and runtime behaviour.
 
 ![Game Inspector](images/game.png)
 
-------------------------------------------------------------------------
+---
 
 ## 🚀 Features
 
 ### 1. Interactive Chess Engine
 
--   Interactive chessboard.
--   Legal move validation.
--   Piece movement and capture.
--   Move history.
--   Undo and redo.
--   Board orientation controls.
--   Game-state inspection.
+- Interactive chessboard.
+- Legal move validation.
+- Piece movement and capture.
+- Move history.
+- Undo and redo.
+- Board orientation controls.
+- Game-state inspection.
 
 ### 2. AI Opponent
 
 Play against an integrated chess AI.
 
--   Player-versus-AI gameplay.
--   Selectable difficulty levels.
--   AI strategy abstraction.
--   Minimax-based search implementation.
--   Position evaluation.
+- Player-versus-AI gameplay.
+- Selectable difficulty levels.
+- AI strategy abstraction.
+- Minimax-based search implementation.
+- Position evaluation.
 
 ### 3. Live UML Inspector
 
@@ -149,14 +153,14 @@ Game-state information.
 
 ### 4. Inspector Controls
 
--   Switch between visualization tabs.
--   Show or hide the inspector.
--   Resize the inspector panel.
--   Zoom in and out.
--   Fit diagrams to the available viewport.
--   Inspect generated PlantUML source.
+- Switch between visualization tabs.
+- Show or hide the inspector.
+- Resize the inspector panel.
+- Zoom in and out.
+- Fit diagrams to the available viewport.
+- Inspect generated PlantUML source.
 
-------------------------------------------------------------------------
+---
 
 ## 🏗️ Architecture
 
@@ -165,23 +169,25 @@ gameplay logic from presentation and visualization.
 
 The main architectural areas include:
 
-  Module          Responsibility
-  --------------- ----------------------------------------------------
-  `chess`         Chess domain model, board, pieces and game rules
-  `engine`        Core game abstractions and shared functionality
-  `ai`            AI strategies, search and position evaluation
-  `ui`            JavaFX interface, board rendering and interaction
-  `uml`           Diagram generation and architectural visualization
-  `persistence`   Game data and persistence functionality
-  `exception`     Application-specific exception hierarchy
-  `checkers`      Checkers extension and domain foundations
+Module Responsibility
+
+---
+
+`chess` Chess domain model, board, pieces and game rules
+`engine` Core game abstractions and shared functionality
+`ai` AI strategies, search and position evaluation
+`ui` JavaFX interface, board rendering and interaction
+`uml` Diagram generation and architectural visualization
+`persistence` Game data and persistence functionality
+`exception` Application-specific exception hierarchy
+`checkers` Checkers extension and domain foundations
 
 The architecture is designed around separation of concerns: the UI
 handles presentation, the domain layer owns game behaviour, AI operates
 through strategy abstractions, and the UML inspector observes the
 system.
 
-------------------------------------------------------------------------
+---
 
 ## 🧩 Object-Oriented Design
 
@@ -190,39 +196,41 @@ software engineering principles.
 
 Key concepts demonstrated include:
 
--   **Abstraction:** Common piece behaviour and AI strategy contracts.
--   **Encapsulation:** Game state and domain behaviour are managed by
-    dedicated objects.
--   **Inheritance:** Specialized chess pieces build on shared
-    abstractions.
--   **Polymorphism:** Piece-specific movement behaviour and
-    interchangeable AI strategies.
--   **Interfaces:** Contracts between the game engine and its
-    collaborators.
--   **Composition:** Relationships between games, boards, squares and
-    pieces.
+- **Abstraction:** Common piece behaviour and AI strategy contracts.
+- **Encapsulation:** Game state and domain behaviour are managed by
+  dedicated objects.
+- **Inheritance:** Specialized chess pieces build on shared
+  abstractions.
+- **Polymorphism:** Piece-specific movement behaviour and
+  interchangeable AI strategies.
+- **Interfaces:** Contracts between the game engine and its
+  collaborators.
+- **Composition:** Relationships between games, boards, squares and
+  pieces.
 
 ### Design Patterns
 
 The architecture incorporates patterns such as:
 
--   Strategy --- interchangeable AI algorithms.
--   Command --- representing and executing moves.
--   Observer --- publishing runtime events to interested components.
+- Strategy --- interchangeable AI algorithms.
+- Command --- representing and executing moves.
+- Observer --- publishing runtime events to interested components.
 
-------------------------------------------------------------------------
+---
 
 ## 🛠️ Technology Stack
 
-  Technology   Usage
-  ------------ ---------------------------------
-  Java 17      Core application language
-  JavaFX       Desktop graphical interface
-  Maven        Dependency and build management
-  PlantUML     UML diagram generation
-  JUnit 5      Automated testing
+Technology Usage
 
-------------------------------------------------------------------------
+---
+
+Java 17 Core application language
+JavaFX Desktop graphical interface
+Maven Dependency and build management
+PlantUML UML diagram generation
+JUnit 5 Automated testing
+
+---
 
 ## ⚙️ Getting Started
 
@@ -230,13 +238,13 @@ The architecture incorporates patterns such as:
 
 Install the following:
 
--   Java Development Kit (JDK) 17 or later.
--   Apache Maven 3.9 or later.
--   Git.
+- Java Development Kit (JDK) 17 or later.
+- Apache Maven 3.9 or later.
+- Git.
 
 Verify your installations:
 
-``` bash
+```bash
 java -version
 mvn -version
 git --version
@@ -244,33 +252,33 @@ git --version
 
 ### Clone the Repository
 
-``` bash
+```bash
 git clone https://github.com/rudraminaa/glassbox-engine.git
 cd glassbox-engine
 ```
 
 ### Build the Project
 
-``` bash
+```bash
 mvn clean install
 ```
 
 ### Run Tests
 
-``` bash
+```bash
 mvn test
 ```
 
 ### Launch the Application
 
-``` bash
+```bash
 mvn javafx:run
 ```
 
 > The JavaFX launch command assumes the Maven JavaFX plugin and
 > application entry point are configured in the project.
 
-------------------------------------------------------------------------
+---
 
 ## 🎮 How to Use
 
@@ -285,7 +293,7 @@ mvn javafx:run
     Component and Game views.
 9.  Zoom, fit, resize and inspect the generated UML source.
 
-------------------------------------------------------------------------
+---
 
 ## 🎯 Project Goals
 
@@ -298,32 +306,32 @@ connecting the system's design to its actual runtime behaviour.
 
 It serves as:
 
--   A practical demonstration of Object-Oriented Methodology.
--   An exploration of UML and software architecture.
--   A modular Java application.
--   An interactive learning and experimentation environment.
--   A foundation for extending the visualization system to additional
-    games and domains.
+- A practical demonstration of Object-Oriented Methodology.
+- An exploration of UML and software architecture.
+- A modular Java application.
+- An interactive learning and experimentation environment.
+- A foundation for extending the visualization system to additional
+  games and domains.
 
-------------------------------------------------------------------------
+---
 
 ## 🔮 Future Scope
 
 Potential directions for further development include:
 
--   More detailed runtime object inspection.
--   Expanded UML coverage.
--   Improved diagram layout and navigation.
--   Additional AI strategies and evaluation techniques.
--   PGN import and export.
--   Additional board games using shared engine abstractions.
--   Architecture snapshots and exportable diagrams.
+- More detailed runtime object inspection.
+- Expanded UML coverage.
+- Improved diagram layout and navigation.
+- Additional AI strategies and evaluation techniques.
+- PGN import and export.
+- Additional board games using shared engine abstractions.
+- Architecture snapshots and exportable diagrams.
 
-------------------------------------------------------------------------
+---
 
 ## 📁 Repository Structure
 
-``` text
+```text
 glassbox-engine/
 │
 ├── src/
@@ -352,10 +360,10 @@ glassbox-engine/
 └── .gitignore
 ```
 
-*The structure above illustrates the intended organization; consult the
-repository for the current implementation.*
+_The structure above illustrates the intended organization; consult the
+repository for the current implementation._
 
-------------------------------------------------------------------------
+---
 
 ## 👨‍💻 Author
 
@@ -364,23 +372,22 @@ repository for the current implementation.*
 GitHub: [@rudraminaa](https://github.com/rudraminaa)
 
 Project: [GlassBox
-Engine](https://github.com/rudraminaa/glassbox-engine)
+Engine](https://github.com/rudraminaa/glassbox)
 
-------------------------------------------------------------------------
+---
 
 ## 📄 License
 
 See the repository for licensing information.
 
-------------------------------------------------------------------------
+---
 
-```{=html}
-<p align="center">
-```
-`<strong>`{=html}GlassBox Engine`</strong>`{=html}`<br/>`{=html}
-`<em>`{=html}Making software architecture visible, interactive, and
-alive.`</em>`{=html}
-```{=html}
-</p>
-```
+<div align="center">
 
+GlassBox Engine
+
+Making software architecture visible, interactive, and alive.
+
+GitHub Repository · Releases · Live Website
+
+</div>
